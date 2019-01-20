@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>API docs</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+	<!-- Font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+	<!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
+	<style></style>
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+	<!-- Load CSS Start -->
+	<script>loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" );</script>
+	<script>loadCSS( "css/header.min.css?ver=1.0.0", false, "all" );</script>
+	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+	<!-- Load CSS End -->
+
+	<!-- Load CSS Compiled without JS -->
+	<noscript>
+		<link rel="stylesheet" href="css/fonts.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+	</noscript>
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<!-- Sidebar -->
+		<nav id="sidebar">
+			<!-- tabs nav -->
+
+			<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+				<div id="accordion">
+				  <div class="card">
+				    <div class="card-header" id="headingOne">
+				      <h5 class="mb-0">
+				        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				          Account
+				        </button>
+				      </h5>
+				    </div>
+
+				    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+				      <div class="card-body">
+				      	<ul class="list-group list-group-flush">
+				      	  <li class="list-group-item">
+				      	  	<a class="link-http active show" id="v-pills-type1-tab" data-toggle="pill" href="#v-pills-type1" role="tab" aria-controls="v-pills-type1" aria-selected="true">
+				      	  		<span class="type color1">GET</span>
+				      	  		<span class="value color1">Create Guest Session</span>
+				      	  	</a>
+				      	  </li>
+				      	  <li class="list-group-item">
+				      	  	<a class="link-http" id="v-pills-type2-tab" data-toggle="pill" href="#v-pills-type2" role="tab" aria-controls="v-pills-type2" aria-selected="true">
+				      	  		<span class="type color2">GET</span>
+				      	  		<span class="value color2">Create Guest Session</span>
+				      	  	</a>
+				      	  </li>
+				      	  <li class="list-group-item">
+				      	  	<a class="link-http" id="v-pills-type1-tab" data-toggle="pill" href="#v-pills-type1" role="tab" aria-controls="v-pills-type1" aria-selected="true">
+				      	  		<span class="type color3">GET</span>
+				      	  		<span class="value color3">Create Guest Session</span>
+				      	  	</a>
+				      	  </li>
+				      	  <li class="list-group-item">
+				      	  	<a class="link-http" id="v-pills-type2-tab" data-toggle="pill" href="#v-pills-type2" role="tab" aria-controls="v-pills-type2" aria-selected="true">
+				      	  		<span class="type color1">GET</span>
+				      	  		<span class="value">Create Guest Session</span>
+				      	  	</a>
+				      	  </li>
+				      	  <li class="list-group-item">
+				      	  	<a class="link-http" id="v-pills-type1-tab" data-toggle="pill" href="#v-pills-type1" role="tab" aria-controls="v-pills-type1" aria-selected="true">
+				      	  		<span class="type color2">GET</span>
+				      	  		<span class="value">Create Guest Session</span>
+				      	  	</a>
+				      	  </li>
+				      	  <li class="list-group-item">
+				      	  	<a class="link-http" id="v-pills-type2-tab" data-toggle="pill" href="#v-pills-type2" role="tab" aria-controls="v-pills-type2" aria-selected="true">
+				      	  		<span class="type color3">DELETE</span>
+				      	  		<span class="value">Delete Session</span>
+				      	  	</a>
+				      	  </li>
+				      	</ul>
+				        
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingTwo">
+				      <h5 class="mb-0">
+				        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				          Authentication
+				        </button>
+				      </h5>
+				    </div>
+				    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+				      <div class="card-body">
+				      	<ul class="list-group list-group-flush">
+				      	  <li class="list-group-item">
+				      	  	<a class="link-http" id="v-pills-type1-tab" data-toggle="pill" href="#v-pills-type1" role="tab" aria-controls="v-pills-type1" aria-selected="true">
+				      	  		<span class="type color1">GET</span>
+				      	  		<span class="value color1">Create Guest Session</span>
+				      	  	</a>
+				      	  </li>
+				      	  <li class="list-group-item">
+				      	  	<a class="link-http" id="v-pills-type2-tab" data-toggle="pill" href="#v-pills-type2" role="tab" aria-controls="v-pills-type2" aria-selected="true">
+				      	  		<span class="type color2">GET</span>
+				      	  		<span class="value color2">Create Guest Session</span>
+				      	  	</a>
+				      	  </li>
+				      	  <li class="list-group-item">
+				      	  	<a class="link-http" id="v-pills-type1-tab" data-toggle="pill" href="#v-pills-type1" role="tab" aria-controls="v-pills-type1" aria-selected="true">
+				      	  		<span class="type color3">GET</span>
+				      	  		<span class="value color3">Create Guest Session</span>
+				      	  	</a>
+				      	  </li>
+				      	  <li class="list-group-item">
+				      	  	<a class="link-http" id="v-pills-type2-tab" data-toggle="pill" href="#v-pills-type2" role="tab" aria-controls="v-pills-type2" aria-selected="true">
+				      	  		<span class="type color1">GET</span>
+				      	  		<span class="value">Create Guest Session</span>
+				      	  	</a>
+				      	  </li>
+				      	  <li class="list-group-item">
+				      	  	<a class="link-http" id="v-pills-type1-tab" data-toggle="pill" href="#v-pills-type1" role="tab" aria-controls="v-pills-type1" aria-selected="true">
+				      	  		<span class="type color2">GET</span>
+				      	  		<span class="value">Create Guest Session</span>
+				      	  	</a>
+				      	  </li>
+				      	  <li class="list-group-item">
+				      	  	<a class="link-http" id="v-pills-type2-tab" data-toggle="pill" href="#v-pills-type2" role="tab" aria-controls="v-pills-type2" aria-selected="true">
+				      	  		<span class="type color3">DELETE</span>
+				      	  		<span class="value">Delete Session</span>
+				      	  	</a>
+				      	  </li>
+				      	</ul>
+				        
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingThree">
+				      <h5 class="mb-0">
+				        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				          Changes
+				        </button>
+				      </h5>
+				    </div>
+				    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+				      <div class="card-body">
+				      	<ul class="list-group list-group-flush">
+				      	  <li class="list-group-item">
+				      	  	<a class="link-http" id="v-pills-type1-tab" data-toggle="pill" href="#v-pills-type1" role="tab" aria-controls="v-pills-type1" aria-selected="true">
+				      	  		<span class="type color1">GET</span>
+				      	  		<span class="value color1">Create Guest Session</span>
+				      	  	</a>
+				      	  </li>
+				      	  <li class="list-group-item">
+				      	  	<a class="link-http" id="v-pills-type2-tab" data-toggle="pill" href="#v-pills-type2" role="tab" aria-controls="v-pills-type2" aria-selected="true">
+				      	  		<span class="type color2">GET</span>
+				      	  		<span class="value color2">Create Guest Session</span>
+				      	  	</a>
+				      	  </li>
+				      	  <li class="list-group-item">
+				      	  	<a class="link-http" id="v-pills-type1-tab" data-toggle="pill" href="#v-pills-type1" role="tab" aria-controls="v-pills-type1" aria-selected="true">
+				      	  		<span class="type color3">GET</span>
+				      	  		<span class="value color3">Create Guest Session</span>
+				      	  	</a>
+				      	  </li>
+				      	  <li class="list-group-item">
+				      	  	<a class="link-http" id="v-pills-type2-tab" data-toggle="pill" href="#v-pills-type2" role="tab" aria-controls="v-pills-type2" aria-selected="true">
+				      	  		<span class="type color1">GET</span>
+				      	  		<span class="value">Create Guest Session</span>
+				      	  	</a>
+				      	  </li>
+				      	  <li class="list-group-item">
+				      	  	<a class="link-http" id="v-pills-type1-tab" data-toggle="pill" href="#v-pills-type1" role="tab" aria-controls="v-pills-type1" aria-selected="true">
+				      	  		<span class="type color2">GET</span>
+				      	  		<span class="value">Create Guest Session</span>
+				      	  	</a>
+				      	  </li>
+				      	  <li class="list-group-item">
+				      	  	<a class="link-http" id="v-pills-type2-tab" data-toggle="pill" href="#v-pills-type2" role="tab" aria-controls="v-pills-type2" aria-selected="true">
+				      	  		<span class="type color3">DELETE</span>
+				      	  		<span class="value">Delete Session</span>
+				      	  	</a>
+				      	  </li>
+				      	</ul>
+				        
+				      </div>
+				    </div>
+				  </div>
+				</div>
+		    </div>
+		</nav>
+		<div id="content">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<button type="button" id="sidebarCollapse" class="btn">
+				    <i class="fas fa-bars"></i>
+				</button>
+			  <a class="navbar-brand" href="#">API docs</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav mr-auto">
+			      <li class="nav-item active">
+			        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Link</a>
+			      </li>
+			      <li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          Dropdown
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="#">Action</a>
+			          <a class="dropdown-item" href="#">Another action</a>
+			          <div class="dropdown-divider"></div>
+			          <a class="dropdown-item" href="#">Something else here</a>
+			        </div>
+			      </li>
+			    </ul>
+			    <form class="form-inline my-2 my-lg-0">
+			      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			    </form>
+			  </div>
+			</nav>
+
+			<!-- Tabs content -->
+			<div class="tab-content" id="v-pills-tabContent">
+		      <div class="tab-pane fade show active" id="v-pills-type1" role="tabpanel" aria-labelledby="v-pills-type1-tab">
+		      	<h2><span class="color1">GET</span> /authentication/guest_session/new</h2>
+		      	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum blanditiis voluptatem alias rem quo vero illo incidunt reiciendis sunt veritatis ipsa maiores itaque suscipit deleniti, nesciunt, porro accusantium cum qui!</p>
+		      	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse a eum sapiente inventore temporibus? Mollitia esse repudiandae, iste quia odit. Rerum dolore quos, vero quas ad nulla nemo doloremque ab.</p>
+		      	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim.</p>
+
+		      	<ul class="nav nav-tabs" role="tablist">
+		      	  <li class="nav-item">
+		      	    <a class="nav-link active" id="definition-tab" data-toggle="tab" href="#definition" role="tab" aria-controls="definition" aria-selected="true">Definition</a>
+		      	  </li>
+		      	  <li class="nav-item">
+		      	    <a class="nav-link" id="try-tab" data-toggle="tab" href="#try" role="tab" aria-controls="try" aria-selected="false">Try it out</a>
+		      	  </li>
+		      	</ul>
+		      	<div class="tab-content">
+		      	  <div class="tab-pane fade show active" id="definition" role="tabpanel" aria-labelledby="definition-tab">
+		      	  	<h3>Authentication</h3>
+		      	  	<div class="custom-control custom-checkbox">
+		      	  	  <input type="checkbox" class="custom-control-input" id="customCheckDisabled" disabled checked>
+		      	  	  <label class="custom-control-label" for="customCheckDisabled">API Key</label>
+		      	  	</div>
+
+		      	  	<h3 class="mt-5">Query String</h3>
+
+		      	  	<table class="table-api">
+		      	  	  <tbody>
+		      	  	    <tr>
+		      	  	      <td>account_id</td>
+		      	  	      <td class="color3">integer</td>
+		      	  	      <td class="color4">optional</td>
+		      	  	    </tr>
+		      	  	  </tbody>
+		      	  	</table>
+
+		      	  	<h3 class="mt-5">Query String</h3>
+
+		      	  	<table class="table-api">
+		      	  	  <tbody>
+		      	  	    <tr>
+		      	  	      <td>api_key</td>
+		      	  	      <td class="color1">string</td>
+		      	  	      <td class="color4">
+		      	  	      	<b>default</b> api_key
+  	      	      	  	    <div class="d-none">
+  	      	      	  	      	Text to show after click on td
+  	      					</div>
+		      	  	      </td>
+		      	  	      <td><b>required</b></td>
+		      	  	    </tr>
+		      	  	    <tr>
+		      	  	      <td>language</td>
+		      	  	      <td class="color1">string</td>
+		      	  	      <td class="color4">
+		      	  	      	Pass a ISO 639-1 value to display translated data for the fields that support it.
+			      	  	      <div class="d-none">
+			      	  	      	minLength: 2<br>
+								pattern: ([a-z]{2})-([A-Z]{2})<br>
+								default: en-US
+							  </div>	
+							</td>
+		      	  	      <td><b>required</b></td>
+		      	  	    </tr>
+		      	  	    <tr>
+		      	  	      <td>session_id</td>
+		      	  	      <td class="color1">string</td>
+		      	  	      <td class="color4">
+		      	  	      	<b>default</b> api_key
+  	      	      	  	    <div class="d-none">
+  	      	      	  	      	Text to show after click on td
+  	      					</div>
+		      	  	      </td>
+		      	  	      <td><b>required</b></td>
+		      	  	    </tr>
+		      	  	    <tr>
+		      	  	      <td>page</td>
+		      	  	      <td class="color4">integer</td>
+      	      	  	      <td class="color4">
+      	      	  	      	<b>default</b> api_key
+	      	      	  	    <div class="d-none">
+	      	      	  	      	Text to show after click on td
+	      					</div>
+      	      	  	      </td>
+		      	  	      <td><b>required</b></td>
+		      	  	    </tr>
+		      	  	  </tbody>
+		      	  	</table>
+
+		      	  	<h3 class="mt-5">Responses <small>application/json</small></h3>
+
+		      	  	<table class="table-api-with-codes">
+		      	  		<thead>
+		      	  			<td colspan="2">
+		      	  				<a href="#" class="collapseToggle">Collapse toggle</a>
+		      	  			</td>
+		      	  		</thead>
+		      	  	  	<tbody>
+			      	  	    <tr>
+			      	  	    	<td>
+			      	  	    		<ul class="nav nav-tabs" id="codesTable" role="tablist">
+			      	  	    		  <li class="nav-item">
+			      	  	    		    <a class="nav-link active" id="type1-tab" data-toggle="tab" href="#type1" role="tab" aria-controls="type1" aria-selected="true">
+			      	  	    		    	<span class="code type1">200</span>
+			      	  	    		    </a>
+			      	  	    		  </li>
+			      	  	    		  <li class="nav-item">
+			      	  	    		    <a class="nav-link" id="type2-tab" data-toggle="tab" href="#type2" role="tab" aria-controls="type2" aria-selected="false">
+			      	  	    		    	<span class="code type2">300</span>
+			      	  	    		    </a>
+			      	  	    		  </li>
+			      	  	    		  <li class="nav-item">
+			      	  	    		    <a class="nav-link" id="type3-tab" data-toggle="tab" href="#type3" role="tab" aria-controls="type3" aria-selected="false">
+			      	  	    		    	<span class="code type3">400</span>
+			      	  	    		    </a>
+			      	  	    		  </li>
+			      	  	    		  <li class="nav-item">
+			      	  	    		    <a class="nav-link" id="type4-tab" data-toggle="tab" href="#type4" role="tab" aria-controls="type4" aria-selected="false">
+			      	  	    		    	<span class="code type4">500</span>
+			      	  	    		    </a>
+			      	  	    		  </li>
+			      	  	    		</ul>
+			      	  	    	</td>
+			      	  	    	<td>
+			      	  	    		<div class="tab-content" id="codesTableContent">
+			      	  	    		  <div class="tab-pane fade show active" id="type1" role="tabpanel" aria-labelledby="type1-tab">
+  	    		  			      	  	<table class="table-api">
+  	    		  			      	  	  <tbody>
+  	    		  			      	  	    <tr>
+  	    		  			      	  	      <td>api_key</td>
+  	    		  			      	  	      <td class="color1">string</td>
+  	    		  			      	  	      <td class="color4">
+  	    		  			      	  	      	<b>default</b> api_key
+  	    		  	  	      	      	  	    <div class="d-none">
+  	    		  	  	      	      	  	      	Text to show after click on td
+  	    		  	  	      					</div>
+  	    		  			      	  	      </td>
+  	    		  			      	  	      <td><b>required</b></td>
+  	    		  			      	  	    </tr>
+  	    		  			      	  	    <tr>
+  	    		  			      	  	      <td>language</td>
+  	    		  			      	  	      <td class="color1">string</td>
+  	    		  			      	  	      <td class="color4">
+  	    		  			      	  	      	Pass a ISO 639-1 value to display translated data for the fields that support it.
+  	    		  				      	  	      <div class="d-none">
+  	    		  				      	  	      	minLength: 2<br>
+  	    		  									pattern: ([a-z]{2})-([A-Z]{2})<br>
+  	    		  									default: en-US
+  	    		  								  </div>	
+  	    		  								</td>
+  	    		  			      	  	      <td><b>required</b></td>
+  	    		  			      	  	    </tr>
+  	    		  			      	  	    <tr>
+  	    		  			      	  	      <td>session_id</td>
+  	    		  			      	  	      <td class="color1">string</td>
+  	    		  			      	  	      <td class="color4">
+  	    		  			      	  	      	<b>default</b> api_key
+  	    		  	  	      	      	  	    <div class="d-none">
+  	    		  	  	      	      	  	      	Text to show after click on td
+  	    		  	  	      					</div>
+  	    		  			      	  	      </td>
+  	    		  			      	  	      <td><b>required</b></td>
+  	    		  			      	  	    </tr>
+  	    		  			      	  	    <tr>
+  	    		  			      	  	      <td>page</td>
+  	    		  			      	  	      <td class="color4">integer</td>
+  	    		  	      	      	  	      <td class="color4">
+  	    		  	      	      	  	      	<b>default</b> api_key
+  	    		  		      	      	  	    <div class="d-none">
+  	    		  		      	      	  	      	Text to show after click on td
+  	    		  		      					</div>
+  	    		  	      	      	  	      </td>
+  	    		  			      	  	      <td><b>required</b></td>
+  	    		  			      	  	    </tr>
+  	    		  			      	  	  </tbody>
+  	    		  			      	  	</table>
+			      	  	    		  </div>
+			      	  	    		  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+			      	  	    		  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+			      	  	    		</div>
+			      	  	    	</td>
+			      	  	    </tr>
+		      	  	  	</tbody>
+		      	  	</table>
+
+		      	  </div>
+		      	  <div class="tab-pane fade" id="try" role="tabpanel" aria-labelledby="try-tab">...2</div>
+		      	</div>
+
+		      </div>
+		      <div class="tab-pane fade" id="v-pills-type2" role="tabpanel" aria-labelledby="v-pills-type2-tab">
+		      	....
+		      </div>
+		    </div>
+		</div>
+		
+	</div>
+
+	<div class="hidden"></div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Load Scripts Start -->
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+	<!-- Load Scripts End -->
+
+</body>
+</html>
