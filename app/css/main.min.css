@@ -2574,13 +2574,11 @@ table.table-api-with-codes {
         left: 0;
         top: 2px; }
     table.table-api-with-codes td .type1:before {
-      background: #27ae60; }
+      background: #4eb509; }
     table.table-api-with-codes td .type2:before {
-      background: #347fc4; }
+      background: #9a8022; }
     table.table-api-with-codes td .type3:before {
-      background: #c0392b; }
-    table.table-api-with-codes td .type4:before {
-      background: #999; }
+      background: #e74c3c; }
     table.table-api-with-codes td .nav-tabs {
       border: none; }
       table.table-api-with-codes td .nav-tabs .nav-item {

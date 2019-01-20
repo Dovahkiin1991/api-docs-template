@@ -149,22 +149,17 @@ table.table-api-with-codes {
     	}
     	.type1 {
 			&:before {
-				background: $color1;
+				background: $type1;
 			}
     	}
     	.type2 {
 			&:before {
-				background: $color2;
+				background: $type2;
 			}
     	}
     	.type3 {
 			&:before {
-				background: $color3;
-			}
-    	}
-    	.type4 {
-			&:before {
-				background: $color4;
+				background: $type3;
 			}
     	}
     	.nav-tabs {
